@@ -1,23 +1,24 @@
-# sb1-32ybvmwf
+# Phornpailin's Portfolio
 
-This project was created and pushed to GitHub using [Bolt to GitHub](https://github.com/mamertofabian/bolt-to-github) Chrome Extension.
+Frontend Developer & UI/UX Designer.
 
-## Description
+## 🚀 Live Demo
 
-[Add your project description here]
+[View Portfolio](https://your-portfolio-url.com)
 
-## Installation
+## 📋 About
 
-[Add installation instructions here]
+This is my personal portfolio website showcasing my projects and skills in frontend development and UI/UX design.
 
-## Usage
+## 🛠️ Built With
 
-[Add usage instructions here]
+React, TypeScript, Tailwind CSS, Vite, Lucide React
 
-## Contributing
+## ✨ Features
 
-[Add contribution guidelines here]
+- Interactive project modals with detailed information
+- Contact form integration
+- Skills, project cards
 
-## License
 
-[Add license information here]
+
