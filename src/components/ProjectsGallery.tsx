@@ -25,8 +25,8 @@ const ProjectsGallery = () => {
         "Full music interface (Home, Search, Library)",
         "Modern UI with retro aesthetics"
       ],
-      timeline: "2 weeks",
-      role: "Frontend Developer & UI/UX Designer"
+      timeline: "4 weeks",
+      role: "Frontend & UI/UX Design"
     },
     {
       title: "Pocket Banking App",
@@ -49,7 +49,7 @@ const ProjectsGallery = () => {
         "Balancing feature with interface simplicity"
       ],
       timeline: "3 weeks",
-      role: "UX/UI Designer & Researcher"      
+      role: "UX/UI Design"      
     }
 
     // without big screen detail

@@ -6,14 +6,6 @@ const About = () => {
     <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          {/* <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              About Me
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              I’m a creative person who loves design because it gives me the freedom to bring ideas to life. Nothing beats the feeling of seeing something I made look great on screen.
-            </p>
-          </div> */}
           
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-6 justify-center">

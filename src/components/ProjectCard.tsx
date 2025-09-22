@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github, ArrowRight, Eye } from 'lucide-react';
+import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 
 interface ProjectCardProps {
   title: string;
@@ -36,7 +36,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   return (
     <div 
-      className={`group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden hover:-translate-y-2 ${hasDetails ? 'cursor-pointer' : ''}`}
+      className={`group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden hover:-translate-y-2 my-10 ${hasDetails ? 'cursor-pointer' : ''}`}
       onClick={handleCardClick}
     >
       <div className="relative overflow-hidden">
