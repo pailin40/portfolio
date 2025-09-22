@@ -35,21 +35,25 @@ const Footer = () => {
               <h4 className="text-lg font-semibold mb-4">Connect</h4>
               <div className="flex gap-3">
                 <a 
-                  href="mailto:phornpailin@example.com" 
+                  href="mailto:Phornpailin04@outlook.com" 
                   className="p-2 bg-slate-800 hover:bg-slate-700 rounded-lg transition-all duration-300 hover:scale-110"
                   aria-label="Email"
                 >
                   <Mail className="h-5 w-5" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://github.com/pailin40" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-2 bg-slate-800 hover:bg-slate-700 rounded-lg transition-all duration-300 hover:scale-110"
                   aria-label="GitHub"
                 >
                   <Github className="h-5 w-5" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.linkedin.com/in/phornpailin-lertudomkitpaisan/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-2 bg-slate-800 hover:bg-slate-700 rounded-lg transition-all duration-300 hover:scale-110"
                   aria-label="LinkedIn"
                 >

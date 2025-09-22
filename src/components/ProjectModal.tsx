@@ -16,7 +16,6 @@ interface ProjectModalProps {
     features?: string[];
     challenges?: string[];
     timeline?: string;
-    teamSize?: string;
     role?: string;
   };
 }
@@ -66,17 +65,6 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, project })
               </div>
             )}
             
-            {project.teamSize && (
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-teal-100 text-teal-600 rounded-lg flex items-center justify-center">
-                  <Users className="h-5 w-5" />
-                </div>
-                <div>
-                  <div className="font-semibold text-gray-900">Team Size</div>
-                  <div className="text-gray-600">{project.teamSize}</div>
-                </div>
-              </div>
-            )}
             
             {project.role && (
               <div className="flex items-center gap-3">
@@ -85,7 +73,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, project })
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">My Role</div>
-                  <div className="text-gray-600">{project.role}</div>
+                  {/* <div className="text-gray-600">{project.role}</div> */}
+                  <div className="text-gray-600 whitespace-nowrap">{project.role}</div>
                 </div>
               </div>
             )}

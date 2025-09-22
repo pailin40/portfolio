@@ -16,39 +16,44 @@ const Header = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
-            Data Engineering Student & Web Developer
+          Frontend Developer & UI/UX Designer
           </p>
           
           <p className="text-lg text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Passionate about building scalable data solutions and creating intuitive web experiences. 
-            Bridging the gap between complex data systems and user-friendly interfaces.
+            Frontend developer and UI/UX designer passionate about turning ideas into user-friendly digital experiences. 
+            I like seeing my ideas come to life on screen.        
+
           </p>
           
           <div className="flex justify-center gap-6">
-            <a 
+            {/* <a 
               href="#projects" 
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
               View Projects
-            </a>
+            </a> */}
             
             <div className="flex items-center gap-4">
               <a 
-                href="mailto:phornpailin@example.com" 
+                href="mailto:Phornpailin04@outlook.com" 
                 className="p-3 bg-slate-700 hover:bg-slate-600 rounded-lg transition-all duration-300 hover:scale-110"
                 aria-label="Email"
               >
                 <Mail className="h-5 w-5" />
               </a>
               <a 
-                href="#" 
+                href="https://github.com/pailin40" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 bg-slate-700 hover:bg-slate-600 rounded-lg transition-all duration-300 hover:scale-110"
                 aria-label="GitHub"
               >
                 <Github className="h-5 w-5" />
               </a>
               <a 
-                href="#" 
+                href="https://www.linkedin.com/in/phornpailin-lertudomkitpaisan/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 bg-slate-700 hover:bg-slate-600 rounded-lg transition-all duration-300 hover:scale-110"
                 aria-label="LinkedIn"
               >

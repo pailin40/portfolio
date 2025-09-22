@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import ProjectModal from './ProjectModal';
+import portfolio1 from './images/portfolio1.png';
+import portfolio2 from './images/portfolio2.png';
 
 const ProjectsGallery = () => {
   const [selectedProject, setSelectedProject] = useState<any>(null);
@@ -8,93 +10,59 @@ const ProjectsGallery = () => {
 
   const projects = [
     {
-      title: "Real-Time Data Pipeline Dashboard",
-      description: "Built a comprehensive dashboard for monitoring data pipelines with real-time analytics and alerting. Features automated data quality checks and performance metrics visualization.",
-      technologies: ["Python", "Apache Kafka", "React", "PostgreSQL", "Docker"],
-      image: "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800",
-      demoLink: "https://example.com/pipeline-dashboard",
-      githubLink: "https://github.com/phornpailin/pipeline-dashboard",
-      category: "Data Engineering",
+      title: "Cassette Flow",
+      description: "A retro-themed music streaming interface inspired by cassette tapes. A frontend project focused on creating an immersive user experience with nostalgic design elements and smooth interactions.",
+      technologies: ["React", "JavaScript", "Tailwind CSS"],
+      image: portfolio1,
+      demoLink: "https://pailin40.github.io/cassetteflow/",
+      githubLink: "https://github.com/pailin40/cassetteflow",
+      category: "Frontend",
       hasDetails: true,
-      detailedDescription: "A comprehensive real-time data pipeline monitoring system that processes millions of events daily. The dashboard provides instant visibility into data flow health, quality metrics, and system performance with automated alerting for anomalies.",
+      detailedDescription: "Cassette Flow is a frontend-focused project that recreates the nostalgic experience of cassette tapes in a modern music streaming interface. The project emphasizes UI/UX design, smooth animations, and responsive layouts while maintaining the retro aesthetic of classic audio equipment.",
       features: [
-        "Real-time data stream monitoring",
-        "Automated data quality validation",
-        "Performance metrics visualization",
-        "Alert system for pipeline failures",
-        "Historical trend analysis",
-        "Multi-source data integration"
+        "Cassette-inspired player",
+        "Responsive designs",
+        "Full music interface (Home, Search, Library)",
+        "Modern UI with retro aesthetics"
+      ],
+      timeline: "2 weeks",
+      role: "Frontend Developer & UI/UX Designer"
+    },
+    {
+      title: "Pocket Banking App",
+      description: "A mobile banking UX/UI design featuring smart money organization through spending pockets, each with individual virtual cards for targeted budget control and financial discipline.",
+      technologies: ["Figma", "UI/UX Design", "Prototyping", "Design Systems", "User Research"],
+      image: portfolio2, 
+      demoLink: "https://www.figma.com/proto/h4fkNhIxMIuVcBfQScbLJS/mobile-bank-app?node-id=133-315&p=f&t=WGoLQJB95d2F8wfy-0&scaling=scale-down&content-scaling=fixed&page-id=133%3A314&starting-point-node-id=133%3A315",
+      category: "UX/UI Design",
+      hasDetails: true,
+      detailedDescription: "Pocket Banking App enhances personal finance management through a unique pocket-based system. Users can allocate funds from their main account into specialized spending categories (rent, savings, travel) and receive individual virtual cards for each pocket, ensuring spending stays within designated budgets and preventing financial overflow between categories.",
+      features: [
+        "Multi-pocket money allocation system",
+        "Individual virtual cards per spending pocket", 
+        "Instant peer-to-peer money transfers",
+        "Interactive spending analytics dashboard"
       ],
       challenges: [
-        "Handling high-volume data streams with minimal latency",
-        "Implementing efficient data quality checks without impacting performance",
-        "Creating responsive visualizations for real-time data updates"
+        "Steep learning curve with Figma as my first major design tool",
+        "Uncertainty about project scope and detail requirements cause the extension of wireframing",
+        "Balancing feature with interface simplicity"
       ],
-      timeline: "3 months",
-      teamSize: "Solo project",
-      role: "Full-stack Developer & Data Engineer"
-    },
-    {
-      title: "E-Commerce Analytics Platform",
-      description: "Developed a full-stack analytics platform for e-commerce data processing and visualization. Handles millions of transactions with automated reporting and business intelligence features.",
-      technologies: ["React", "Node.js", "MongoDB", "AWS", "D3.js"],
-      image: "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800",
-      demoLink: "https://example.com/analytics-platform",
-      githubLink: "https://github.com/phornpailin/analytics-platform",
-      category: "Full Stack",
-      hasDetails: true,
-      detailedDescription: "A comprehensive e-commerce analytics platform that transforms raw transaction data into actionable business insights. The system processes millions of transactions daily and provides real-time dashboards for business stakeholders.",
-      features: [
-        "Transaction data processing pipeline",
-        "Customer behavior analytics",
-        "Revenue and sales trend analysis",
-        "Product performance metrics",
-        "Automated report generation",
-        "Interactive data visualizations"
-      ],
-      challenges: [
-        "Scaling database queries for millions of transactions",
-        "Optimizing real-time dashboard performance",
-        "Implementing complex business logic for analytics calculations"
-      ],
-      timeline: "4 months",
-      teamSize: "2 developers",
-      role: "Lead Developer & System Architect"
-    },
-    {
-      title: "Machine Learning Model Deployment",
-      description: "Created an end-to-end ML pipeline with automated model training, validation, and deployment. Features A/B testing capabilities and performance monitoring.",
-      technologies: ["Python", "Flask", "Scikit-learn", "Redis", "Kubernetes"],
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubLink: "https://github.com/phornpailin/ml-deployment",
-      category: "Machine Learning"
-    },
-    {
-      title: "Data Visualization Studio",
-      description: "Interactive web application for creating custom data visualizations with drag-and-drop interface. Supports multiple data sources and export formats.",
-      technologies: ["React", "TypeScript", "D3.js", "Express.js", "SQLite"],
-      image: "https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=800",
-      demoLink: "https://example.com/viz-studio",
-      githubLink: "https://github.com/phornpailin/viz-studio",
-      category: "Data Visualization"
-    },
-    {
-      title: "IoT Sensor Data Collector",
-      description: "Built a scalable system for collecting and processing IoT sensor data with real-time streaming capabilities. Features automated anomaly detection and alert systems.",
-      technologies: ["Python", "Apache Spark", "InfluxDB", "Grafana", "MQTT"],
-      image: "https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubLink: "https://github.com/phornpailin/iot-collector",
-      category: "IoT & Data"
-    },
-    {
-      title: "Task Management Web App",
-      description: "Modern task management application with team collaboration features. Includes real-time updates, file sharing, and project timeline visualization.",
-      technologies: ["React", "Node.js", "Socket.io", "PostgreSQL", "Tailwind CSS"],
-      image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
-      demoLink: "https://example.com/task-manager",
-      githubLink: "https://github.com/phornpailin/task-manager",
-      category: "Web Development"
+      timeline: "3 weeks",
+      role: "UX/UI Designer & Researcher"      
     }
+
+    // without big screen detail
+    // {
+    //   title: "Machine Learning Model Deployment",
+    //   description: "Created an end-to-end ML pipeline with automated model training, validation, and deployment. Features A/B testing capabilities and performance monitoring.",
+    //   technologies: ["Python", "Flask", "Scikit-learn", "Redis", "Kubernetes"],
+    //   image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+    //   githubLink: "https://github.com/phornpailin/ml-deployment",
+    //   category: "Machine Learning"
+    // }
+
+    
   ];
 
   const handleViewDetails = (project: any) => {
@@ -114,10 +82,6 @@ const ProjectsGallery = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Featured Projects
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            A collection of data engineering solutions and web applications that demonstrate 
-            my passion for building scalable, user-focused technology solutions.
-          </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
