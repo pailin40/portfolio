@@ -27,7 +27,7 @@ const ProjectsGallery = () => {
       githubLink: "https://github.com/pailin40/thai-embassy-helsinki",
       designLink:
         "https://www.figma.com/design/MWZnwrW96dAZS4JfEMYOkT/thai-embassy-redesign?node-id=0-1&p=f&t=Y3QhPbQoIW0POjUJ-0",
-      category: "UX/UI Design",
+      category: "UX/UI Design, Frontend",
       hasDetails: true,
       detailedDescription:
         "Thai Embassy Helsinki Website Redesign is a project focused on both interface design and frontend development. Starting with wireframes, I refined layouts and user flows, making improvements during coding to achieve a more visually appealing and intuitive experience. The main goal was to create a user-friendly site that enhances accessibility and navigation for everyone, while preserving the official tone and branding required for a government platform.",
