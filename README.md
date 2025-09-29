@@ -1,24 +1,16 @@
 # Phornpailin's Portfolio
 
-Frontend Developer & UI/UX Designer.
-
-## 🚀 Live Demo
-
+This is my personal portfolio website showcasing my projects and skills in frontend development and UI/UX design.
 [View Portfolio](https://your-portfolio-url.com)
 
-## 📋 About
-
-This is my personal portfolio website showcasing my projects and skills in frontend development and UI/UX design.
-
-## 🛠️ Built With
-
-React, TypeScript, Tailwind CSS, Vite, Lucide React
-
-## ✨ Features
-
+## Features
 - Interactive project modals with detailed information
-- Contact form integration
+- Contact detail
 - Skills, project cards
+
+Build with React, TypeScript, Tailwind CSS, Vite
+
+
 
 
 
