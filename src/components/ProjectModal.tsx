@@ -164,7 +164,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                 rel="noopener noreferrer"
               >
                 <Github className="h-5 w-5" />
-                View Code
+                Visit GitHub
               </a>
             )}
             {project.designLink && (
