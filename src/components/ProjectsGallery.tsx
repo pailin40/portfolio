@@ -4,6 +4,7 @@ import ProjectModal from "./ProjectModal";
 import portfolio1 from "./images/portfolio1.png";
 import portfolio2 from "./images/portfolio2.png";
 import portfolio3 from "./images/portfolio3.png";
+import portfolio4 from "./images/portfolio4.png";
 
 const ProjectsGallery = () => {
   const [selectedProject, setSelectedProject] = useState<any>(null);
@@ -11,16 +12,46 @@ const ProjectsGallery = () => {
 
   const projects = [
     {
+      title: "Thai Restaurant Website (Freelance)",
+      description:
+        "Modern bilingual website for a local restaurant, featuring a custom CMS built with Google Sheets that allows the owner to update menu items, prices, and images without any coding knowledge.",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Figma"
+      ],
+      image: portfolio4,
+      category: "UX/UI Design, Frontend",
+      hasDetails: true,
+      detailedDescription:
+        `Thai Restaurant Website is a freelance UI/UX and frontend project focused on giving the restaurant its first online presence. Built with React and TypeScript, the bilingual (Finnish/English) site helps local customers in Pori easily discover the restaurant and its offerings.
+        \nI started by creating Figma prototypes to align with the client and get design approval. Once approved, I translated the designs into code using a mobile-first, responsive approach, since most users visit the site on their phones. The website includes key sections such as the homepage, menu, and specialties like Thai Shabu, with small design adjustments made during development to improve clarity and visual hierarchy.
+        \nA core part of the project is a custom CMS powered by Google Sheets, which allows the restaurant owner to update menu items, prices, variations, and images without any technical knowledge. This ensures the site is easy to maintain long-term, without relying on a developer for everyday updates.`,
+      features: [
+        "Bilingual Finnish/English menu with language toggle",
+        "Custom Google Sheets CMS for independent content management",
+        "Mobile-first responsive design optimized for on-the-go browsing",
+        "Flexible pricing supporting multiple protein options per dish",
+      ],
+      challenges: [
+        "Matching the website’s visual style to the restaurant’s real atmosphere to set the right customer expectations through color, layout, and overall tone.",
+        "Creating an easy way for the owner to update the menu independently, solved with a Google Sheets–based CMS.",
+        "Balancing text and imagery to communicate the special set effectively, using videos and scrollable images to show dishes without overwhelming the user with plain text."
+      ],
+      timeline: "2 months",
+      role: "Frontend, UX/UI Design",
+    },
+
+    {
       title: "Thai Embassy Helsinki Website Redesign",
       description:
         "A comprehensive redesign of the government website, focusing on improved user experience, accessibility, and modern aesthetics.",
       technologies: [
         "React",
-        "JavaScript",
+        "TypeScript",
         "Tailwind CSS",
-        "Figma",
-        "Prototyping",
-        "Design Systems",
+        "Figma"
       ],
       image: portfolio3,
       demoLink: "https://thai-embassy-helsinki-redesign.netlify.app/",
@@ -46,6 +77,7 @@ const ProjectsGallery = () => {
       timeline: "2 weeks",
       role: "Frontend, UX/UI Design",
     },
+
     {
       title: "Cassette Flow",
       description:
@@ -67,16 +99,13 @@ const ProjectsGallery = () => {
       timeline: "4 weeks",
       role: "Frontend & UI/UX Design",
     },
+
     {
       title: "Pocket Banking App",
       description:
         "A mobile banking UX/UI design featuring smart money organization through spending pockets, each with individual virtual cards for targeted budget control and financial discipline.",
       technologies: [
-        "Figma",
-        "UI/UX Design",
-        "Prototyping",
-        "Design Systems",
-        "User Research",
+        "Figma"
       ],
       image: portfolio2,
       designLink:
