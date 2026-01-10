@@ -18,6 +18,7 @@ interface ProjectModalProps {
     technologies: string[];
     image: string;
     demoLink?: string;
+    website?: string;
     githubLink?: string;
     designLink?: string;
     category: string;
@@ -156,6 +157,19 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                 Live Demo
               </a>
             )}
+
+            {project.website && (
+              <a
+                href={project.website}
+                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ExternalLink className="h-5 w-5" />
+                Website
+              </a>
+            )}
+
             {project.githubLink && (
               <a
                 href={project.githubLink}
@@ -167,6 +181,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                 Visit GitHub
               </a>
             )}
+            
             {project.designLink && (
               <a
                 href={project.designLink}

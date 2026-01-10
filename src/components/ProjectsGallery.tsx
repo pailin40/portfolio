@@ -22,6 +22,7 @@ const ProjectsGallery = () => {
         "Figma"
       ],
       image: portfolio4,
+      website: "https://sukanyathaifood.fi/",
       category: "UX/UI Design, Frontend",
       hasDetails: true,
       detailedDescription:

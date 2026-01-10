@@ -7,6 +7,7 @@ interface ProjectCardProps {
   technologies: string[];
   image: string;
   demoLink?: string;
+  website?: string;
   githubLink?: string;
   designLink?: string;
   category: string;
@@ -20,6 +21,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   technologies,
   image,
   demoLink,
+  website,
   githubLink,
   designLink,
   category,
@@ -78,6 +80,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
         <div className="flex items-center justify-between">
           <div className="flex gap-3">
+
             {demoLink && (
               <a
                 href={demoLink}
@@ -90,6 +93,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 Live Demo
               </a>
             )}
+
+            {website && (
+              <a
+                href={website}
+                className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium transition-colors duration-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <ExternalLink className="h-4 w-4" />
+                Website
+              </a>
+            )}
+
             {githubLink && (
               <a
                 href={githubLink}
@@ -102,6 +119,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 GitHub
               </a>
             )}
+
             {designLink && (
               <a
                 href={designLink}
